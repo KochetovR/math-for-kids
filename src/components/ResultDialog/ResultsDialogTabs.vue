@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="overflow-visible my-6" style="height: 56px">
+  <v-layout class="overflow-visible my-6 mt-3" style="height: 56px">
     <v-bottom-navigation v-model="value" color="teal" grow>
       <v-btn>
         <v-icon color="success">mdi-emoticon</v-icon>

@@ -46,8 +46,8 @@ export default {
   methods: {
     changeSnackbar() {
       if (this.isSuccess) {
-        this.change_next_example(true);
         this.close_snackbar();
+        this.change_next_example(true);
       } else {
         this.close_snackbar();
       }

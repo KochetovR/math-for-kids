@@ -9,6 +9,9 @@ export default {
       "change_next_example",
       "close_snackbar",
       "toggle_results_dialog_tab",
+      "change_type_select",
+      "change_start_checking_btn_valid",
+      "change_type",
     ]),
   },
 };

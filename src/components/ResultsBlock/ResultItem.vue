@@ -1,8 +1,6 @@
 <template>
   <div class="d-flex align-center">
-    <!-- <v-icon :color="iconColor">{{ icon }}</v-icon>
-    <span class="ml-1 text-h6">{{ count }}</span> -->
-    <v-btn class="text-none" icon elevation="0">
+    <v-btn class="text-none" icon elevation="0" @click="openResultDialog">
       <v-badge :content="count" color="primary" floating>
         <v-icon size="30" :color="iconColor">{{ icon }}</v-icon>
       </v-badge>
@@ -25,6 +23,16 @@ export default {
     iconColor: {
       type: String,
       default: "success",
+    },
+    tab: {
+      type: Number,
+      default: 0,
+    },
+  },
+  methods: {
+    openResultDialog() {
+      this.toggle_results_dialog_tab(this.tab);
+      this.toggle_results_dialog(true);
     },
   },
 };

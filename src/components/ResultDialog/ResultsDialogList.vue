@@ -1,10 +1,13 @@
 <template>
-  <v-list lines="two">
-    <v-list-item v-for="(item, index) in items" :key="`${item}${index}`">
-      <v-list-item-title class="text-h6 text-center">
-        {{ item }}
+  <v-list lines="two" class="px-1" height="270">
+    <v-list-item
+      v-for="({ example, type }, index) in items"
+      :key="`${type}${index}${items.length}`"
+    >
+      <v-list-item-title class="text-h6 text-center mb-1">
+        {{ example }}
       </v-list-item-title>
-      <v-divider></v-divider>
+      <v-divider class="mb-0"></v-divider>
     </v-list-item>
   </v-list>
 </template>
@@ -22,4 +25,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.v-list::-webkit-scrollbar {
+  display: none;
+}
+</style>

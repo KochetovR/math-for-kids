@@ -6,6 +6,13 @@ import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi";
 
+const myCustomLightTheme = {
+  dark: false,
+  colors: {
+    primary: "#7E57C2",
+  },
+};
+
 export default createVuetify({
   icons: {
     defaultSet: "mdi",
@@ -14,5 +21,10 @@ export default createVuetify({
       mdi,
     },
   },
+  theme: {
+    defaultTheme: "myCustomLightTheme",
+    themes: {
+      myCustomLightTheme,
+    },
+  },
 });
-// https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides

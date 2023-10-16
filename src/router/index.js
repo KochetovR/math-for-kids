@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MultiplicationTableChecker from "@/components/MultiplicationTableChecker.vue";
+import MathCheck from "@/components/MathCheck.vue";
 
 const routes = [
   {
     path: "/",
     name: "multiplication table checker",
-    component: MultiplicationTableChecker,
+    component: MathCheck,
   },
 ];
 

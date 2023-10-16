@@ -1,6 +1,6 @@
 <template>
-  <h1
-    class="text-h4"
+  <h2
+    class="text-h6"
     :class="{
       'text-h3': $vuetify.display.lg,
       'text-h2': $vuetify.display.xl,
@@ -8,12 +8,12 @@
     }"
   >
     {{ title }}
-  </h1>
+  </h2>
 </template>
 
 <script>
 export default {
-  name: "ComponentTitle",
+  name: "PopupTitle",
   props: {
     title: {
       type: String,

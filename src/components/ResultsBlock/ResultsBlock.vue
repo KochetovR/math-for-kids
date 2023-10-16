@@ -7,6 +7,7 @@
       :count="getWrongAnswersCount"
       :iconColor="'error'"
       :icon="'mdi-emoticon-devil'"
+      :tab="1"
     />
   </div>
 </template>

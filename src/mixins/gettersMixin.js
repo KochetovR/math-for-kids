@@ -13,6 +13,11 @@ export default {
       "getCorrectAnswers",
       "getSnackbarText",
       "getSnackbarColor",
+      "getTypesSelected",
+      "getTypesSelectedLength",
+      "getStartCheckingBtnValid",
+      "getType",
+      "getFormatingTypesSelected",
     ]),
   },
 };
