@@ -8,6 +8,7 @@
       hide-details
       class="font-weight-bold"
       type="number"
+      name="answer"
       @input="inputAnswer"
     ></v-text-field>
   </v-col>
